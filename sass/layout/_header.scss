@@ -1,0 +1,20 @@
+/* Шапка страницы */
+.header {
+  background-color: var(--main-white-color);
+  border: 1px solid var(--border-color);
+}
+.header__logo {
+  margin-right: 93px;
+}
+.header-address {
+  margin-left: auto;
+}
+.logo__header-color {
+  color: var(--main-black-color);
+}
+.header__main,
+.site-nav,
+.header-address {
+  display: flex;
+  align-items: center;
+}

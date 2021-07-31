@@ -1,0 +1,31 @@
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+/* стили для index.html */
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+/* Убираем маркеры в списках по умолчанию */
+li {
+  list-style-type: none;
+}
+/* Убираем подчеркивание в ссылках по умолчанию */
+a {
+  text-decoration: none;
+}
+/* Убираем курсив по умолчанию */
+address {
+  font-style: normal;
+}

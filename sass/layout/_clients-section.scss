@@ -1,0 +1,54 @@
+/* Стили секции Наши клиенты */
+
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: block;
+}
+
+.clients-section__title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-section-list {
+  display: flex;
+}
+.clients-section-list__client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-bg-color);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  fill: var(--icon-bg-color);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--extra-blue-color);
+  }
+}
+
+.clients-section-list__icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-bg-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients-section-list__client:hover &,
+  .clients-section-list__clientt:focus & {
+    fill: var(--extra-blue-color);
+  }
+}

@@ -1,0 +1,48 @@
+/* Стили для секции преимуществ компании */
+.advantages-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages {
+  display: flex;
+  justify-content: space-between;
+
+  & .atention::before {
+    background-image: url(../images/svg-images/antenna.svg);
+  }
+
+  & .punctuality::before {
+    background-image: url(../images/svg-images/clock.svg);
+  }
+  & .planing::before {
+    background-image: url(../images/svg-images/diagram.svg);
+  }
+  & .technologies::before {
+    background-image: url(../images/svg-images/astronaut.svg);
+  }
+}
+
+.advantages__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantages__text {
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+}
+
+.advantage::before {
+  height: 120px;
+  background-color: var(--secondary-bg-color);
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
