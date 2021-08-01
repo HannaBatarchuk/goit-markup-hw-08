@@ -79,11 +79,27 @@ address {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    min-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+  }
 }
 
 /* Стили логотипа */
@@ -575,16 +591,9 @@ a {
   text-align: center;
 }
 
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-}
-
 .hero__content {
-  padding: 200px 0;
+  padding-top: 118px;
+  padding-bottom: 198px;
   text-align: center;
 }
 
@@ -592,8 +601,8 @@ a {
   color: var(--main-white-color);
   letter-spacing: 0.06em;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
@@ -613,58 +622,53 @@ a {
   cursor: pointer;
 }
 
-/* Стили для секции преимуществ компании */
-.advantages-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.advantages {
-  display: flex;
-  justify-content: space-between;
-}
-
-.advantages .atention::before {
-  background-image: url(../images/svg-images/antenna.svg);
-}
-
-.advantages .punctuality::before {
-  background-image: url(../images/svg-images/clock.svg);
-}
-
-.advantages .planing::before {
-  background-image: url(../images/svg-images/diagram.svg);
-}
-
-.advantages .technologies::before {
-  background-image: url(../images/svg-images/astronaut.svg);
-}
-
-.advantages__title {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.advantages__text {
-  width: 270px;
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--secondary-text-color);
-}
-
-.advantage::before {
-  height: 120px;
-  background-color: var(--secondary-bg-color);
-  content: "";
-  display: block;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-size: 30%;
-  background-repeat: no-repeat;
+.overlay {
+  min-height: 400px;
+  background-image: url(../../images/mobile/bg-main.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+@media (min-device-pixel-ratio: 2) and (min-width: 320px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), (min-resolution: 192dpi) and (min-width: 320px), (min-resolution: 2dppx) and (min-width: 320px) {
+  .overlay {
+    background-image: url(../../images/mobile/bg-main@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: url(../../images/tablet/bg-main.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .overlay {
+    background-image: url(../../images/tablet/bg-main@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__content {
+    padding: 200px 0;
+  }
+  .hero__text {
+    font-size: 44px;
+    line-height: 1.4;
+  }
+  .overlay {
+    min-height: 600px;
+    background-image: url(../../images/deckstope/bg-main.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .overlay {
+    background-image: url(../../images/deckstope/bg-main@2x.jpg);
+  }
+}
+
+/* Стили для секции преимуществ компании */
 /* Стили для секции услуг компании */
 .company-services {
   padding-bottom: 94px;
