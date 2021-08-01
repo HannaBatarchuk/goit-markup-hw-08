@@ -683,6 +683,22 @@ a {
   text-align: center;
 }
 
+.hero__content {
+  padding: 118px 198px;
+  text-align: center;
+}
+
+.hero__text {
+  color: var(--main-white-color);
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .hero__button {
   min-width: 200px;
   padding: 10px 32px;
