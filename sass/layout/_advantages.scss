@@ -1,11 +1,29 @@
 /* Стили для секции преимуществ компании */
+
 .advantages-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+.advantages__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+.advantages__text {
+  width: 450px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+}
+
 .advantages {
-  display: flex;
-  justify-content: space-between;
+  display: block;
 
   & .atention::before {
     background-image: url(../images/svg-images/antenna.svg);
@@ -21,28 +39,62 @@
     background-image: url(../images/svg-images/astronaut.svg);
   }
 }
+// .advantage::before {
+//   height: 120px;
+//   background-color: var(--secondary-bg-color);
+//   content: "";
+//   display: block;
+//   margin-bottom: 30px;
+//   border-radius: 4px;
+//   background-size: 30%;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
 
-.advantages__title {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
+// .advantages-section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+// .advantages {
+//   display: flex;
+//   justify-content: space-between;
 
-.advantages__text {
-  width: 270px;
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--secondary-text-color);
-}
+//   & .atention::before {
+//     background-image: url(../images/svg-images/antenna.svg);
+//   }
 
-.advantage::before {
-  height: 120px;
-  background-color: var(--secondary-bg-color);
-  content: "";
-  display: block;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+//   & .punctuality::before {
+//     background-image: url(../images/svg-images/clock.svg);
+//   }
+//   & .planing::before {
+//     background-image: url(../images/svg-images/diagram.svg);
+//   }
+//   & .technologies::before {
+//     background-image: url(../images/svg-images/astronaut.svg);
+//   }
+// }
+
+// .advantages__title {
+//   font-size: 14px;
+//   text-transform: uppercase;
+//   margin-bottom: 10px;
+// }
+
+// .advantages__text {
+//   width: 270px;
+//   font-size: 14px;
+//   line-height: 1.7;
+//   color: var(--secondary-text-color);
+// }
+
+// .advantage::before {
+//   height: 120px;
+//   background-color: var(--secondary-bg-color);
+//   content: "";
+//   display: block;
+//   margin-bottom: 30px;
+//   border-radius: 4px;
+//   background-size: 30%;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
