@@ -42,7 +42,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/mobile/bg-main.jpg);
+    url(../images/mobile/bg-main.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mobile/bg-main@2x.jpg);
+      url(../images/mobile/bg-main@2x.jpg);
   }
 }
 
@@ -70,7 +70,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet/bg-main.jpg);
+      url(../images/tablet/bg-main.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -83,7 +83,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet/bg-main@2x.jpg);
+      url(../images/tablet/bg-main@2x.jpg);
   }
 }
 // desctope
@@ -104,7 +104,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/deckstope/bg-main.jpg);
+      url(../images/deckstope/bg-main.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -117,6 +117,6 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/deckstope/bg-main@2x.jpg);
+      url(../images/deckstope/bg-main@2x.jpg);
   }
 }
