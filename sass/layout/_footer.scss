@@ -1,20 +1,18 @@
 /* Стили футера */
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-footer-bg-color);
 }
-
 .footer__section {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
 }
-
 .logo__footer-color {
   color: var(--main-white-color);
 }
-
 .footer__logo {
   margin-bottom: 20px;
 }
@@ -23,17 +21,35 @@
   font-size: 14px;
   line-height: 1.7;
   color: var(--main-white-color);
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
-.footer__item:not(:last-child) {
-  margin-bottom: 9px;
+.footer__address-section {
+  margin-bottom: 60px;
 }
 .footer__link {
   font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 60px;
   color: var(--footer-link-color);
+}
 
-  &:hover,
-  &:focus {
-    color: var(--extra-blue-color);
+@media screen and (min-width: 768px) {
+  .footer__section {
+    flex-direction: unset;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer__link {
+    font-size: 14px;
+    color: var(--footer-link-color);
+
+    &:hover,
+    &:focus {
+      color: var(--extra-blue-color);
+    }
   }
 }
