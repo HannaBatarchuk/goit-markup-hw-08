@@ -116,6 +116,11 @@ address {
 }
 
 /* Стили навигации */
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav__link {
   display: block;
   padding-top: 32px;
@@ -152,19 +157,17 @@ address {
   margin-left: 50px;
 }
 
-.header-address__item {
-  min-width: 135px;
-  min-height: 16px;
-  justify-content: center;
-  align-content: center;
+a {
+  position: relative;
 }
 
-.header-address__item + .header-address__item {
-  margin-left: 50px;
+.header-address {
+  margin-left: auto;
+  align-items: center;
 }
 
 .header-address__link {
-  display: flex;
+  display: block;
   align-items: center;
   font-weight: 500;
   line-height: 1.2;
@@ -173,19 +176,7 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-address__link:hover, .header-address__link:focus {
-  color: var(--extra-blue-color);
-}
-
-.header-address__link:hover .header-address__icon,
-.header-address__link:hover .header-address__icon, .header-address__link:focus .header-address__icon,
-.header-address__link:focus .header-address__icon {
-  fill: var(--extra-blue-color);
-  cursor: pointer;
-}
-
 .header-address__icon {
-  padding: 0;
   margin-right: 10px;
   display: inline-block;
   justify-content: center;
@@ -194,8 +185,28 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .header-address {
+    display: flex;
+  }
+  .header-address__link:hover, .header-address__link:focus {
+    color: var(--extra-blue-color);
+  }
+  .header-address__link:hover .header-address__icon,
+  .header-address__link:hover .header-address__icon, .header-address__link:focus .header-address__icon,
+  .header-address__link:focus .header-address__icon {
+    fill: var(--extra-blue-color);
+    cursor: pointer;
+  }
+  .header-address__item {
+    min-width: 135px;
+    min-height: 16px;
+    justify-content: center;
+    align-content: center;
+  }
+  .header-address__item + .header-address__item {
+    margin-left: 50px;
+  }
 }
 
 /* Иконки соц-сетей */
@@ -598,28 +609,37 @@ a {
 }
 
 /* Шапка страницы */
+@media screen and (max-width: 767px) {
+  .header {
+    display: none;
+  }
+}
+
+.header__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header {
   background-color: var(--main-white-color);
   border: 1px solid var(--border-color);
-}
-
-.header__logo {
-  margin-right: 93px;
-}
-
-.header-address {
-  margin-left: auto;
 }
 
 .logo__header-color {
   color: var(--main-black-color);
 }
 
-.header__main,
-.site-nav,
-.header-address {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 /* Основные стили контента страницы */
