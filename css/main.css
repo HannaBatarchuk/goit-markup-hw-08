@@ -162,6 +162,18 @@ a {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-address {
+    display: none;
+  }
+}
+
 .header-address {
   margin-left: auto;
   align-items: center;
@@ -610,12 +622,6 @@ a {
 }
 
 /* Шапка страницы */
-@media screen and (max-width: 767px) {
-  .header {
-    display: none;
-  }
-}
-
 .header__main {
   display: flex;
   align-items: center;
@@ -629,6 +635,52 @@ a {
 
 .logo__header-color {
   color: var(--main-black-color);
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.burger-btn__icon {
+  width: 40px;
+  height: 40px;
+  fill: #212121;
+}
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vh;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.close-btn__icon {
+  width: 40px;
+  height: 40px;
+  fill: #212121;
+}
+
+.mobile-menu__container {
+  position: relative;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 768px) {
