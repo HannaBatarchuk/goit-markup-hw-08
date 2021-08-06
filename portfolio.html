@@ -20,35 +20,71 @@
 <body>
     <!-- Шапка сайта-->
     <header class="header">
-        <div class="header__main container">
+        <section class="header__main container">
             <div class="logo header__logo">
                 <a href="./index.html">
                     <span class="logo__main">Web</span><span class="logo__header-color">Studio</span>
                 </a>
             </div>
+    
             <nav>
                 <ul class="site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link active">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link active">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
                     <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="header-address">
                 <li class="header-address__item">
                     <a href="mailto:info@devstudio.com" class="header-address__link">
-                        <svg width="16px" height="12px"
-                            class="header-address__icon">
+                        <svg width="16px" height="12px" class="header-address__icon">
                             <use href="./images/sprite.svg#icon-mail"></use>
                         </svg>info@devstudio.com</a>
                 </li>
                 <li class="header-address__item">
-                    <a href="tel:+380961111111" class="header-address__link"><svg width="10px" height="16px" class="header-address__icon">
+                    <a href="tel:+380961111111" class="header-address__link"><svg width="10px" height="16px"
+                            class="header-address__icon">
                             <use href="./images/sprite.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="burger-btn js-open-menu">
+                <svg class="burger-btn__icon">
+                    <use href="./images/sprite.svg#icon-menu-burger"></use>
+                </svg>
+            </button>
+        </section>
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <div class="container mobile-menu__container ">
+                <button class="close-btn mobile-menu__close-btn js-close-menu">
+                    <svg class="close-btn__icon">
+                        <use href="./images/sprite.svg#icon-close-btn"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-nav">
+                    <li class="mobile-nav__item"><a href="./index.html"
+                            class="mobile-nav__link ">Студия</a></li>
+                    <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link mobole-nav__active">Портфолио</a></li>
+                    <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Контакты</a></li>
+                </ul>
+                <ul class="mobile-address">
+                    <li class="mobile-address__numb">
+                        <a href="tel:+380961111111" class="mobile-address__numb-link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-address__mail">
+                        <a href="mailto:info@devstudio.com" class="mobile-address__mail-link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-network">
+                    <li class="mobile-network__item"><a href="#" class="mobile-network__link">Instagram</a></li>
+                    <li class="mobile-network__item"><a href="#" class="mobile-network__link">Twitter</a></li>
+                    <li class="mobile-network__item"><a href="#" class="mobile-network__link">Facebook</a></li>
+                    <li class="mobile-network__item"><a href="#" class="mobile-network__link">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
+
 
     <!-- Основной контент страницы-->
     <main>
@@ -71,10 +107,6 @@
                     <li class="product-section__item">
                         <a href="#" class="decoration">
                             <div class="product-section__card-slide">  
-                                <!-- <source media="(min-width:1200px)" srcset="./images/desktop/mobile-site.webp, 1x" ,
-                                    srcset="./images/desktope/mobile-site@2x.webp, 2x" type="image/webp">
-                                <source media="(min-width:1200px)" srcset="./images/desktop/mobile-site.jpg, 1x" ,
-                                    srcset="./images/desktope/mobile-site@2x.jpg, 2x"> -->
                                 <picture>
                                     <source media="(min-width:1200px)" srcset="./images/desktop/portfolio/img.webp, 1x",
                                         srcset="./images/desktop/portfolio/img@2x.webp, 2x" type="image/webp" >
@@ -414,6 +446,10 @@
             </form>
         </section>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
