@@ -1,11 +1,12 @@
 /* модальное окно */
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
 
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--main-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -29,6 +30,10 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--extra-blue-color);
+  }
 }
 .modal-form-title {
   margin: 0;
@@ -127,7 +132,7 @@
 }
 
 .form-check-policy {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71px;
   margin-bottom: 30px;
   margin: 0 auto;
@@ -157,4 +162,11 @@
 
 .form-check-policy a {
   color: var(--extra-blue-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
