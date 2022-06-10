@@ -241,8 +241,7 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-network__item-list:hover .team-network__item,
-.team-network__item-list:focus .team-network__item {
+.team-network__item:hover, .team-network__item:focus {
   background-color: var(--extra-blue-color);
 }
 
